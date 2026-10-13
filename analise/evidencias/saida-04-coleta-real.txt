@@ -1,0 +1,12 @@
+Dia civil de Brasília agora: hoje=2026-10-13 amanhã=2026-10-14
+Leme: atm ERRO (756 ms) | mar ERRO (608 ms)
+Copacabana: atm ERRO (363 ms) | mar ERRO (312 ms)
+Ipanema: atm ERRO (0 ms) | mar ERRO (1 ms)
+Barra da Tijuca: atm ERRO (0 ms) | mar ERRO (0 ms)
+Recreio: atm ERRO (0 ms) | mar ERRO (0 ms)
+| Ponto | Dia | Tmax | Sens. | UV | Prob. | Chuva | Rajada | Vento | Onda | Per. | Dir. | Swell | Níveis |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Leme | falha | | | | | | | | | | | | Error: Failed to establish tunnel to api.open-meteo.com:443  |
+| Copacabana | falha | | | | | | | | | | | | Error: Failed to establish tunnel to api.open-meteo.com:443  |
+| Ipanema | falha | | | | | | | | | | | | Not connected |
+| Barra da Tijuca | falha | | | | | | | | | | | | Not connected |

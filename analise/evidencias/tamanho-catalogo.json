@@ -1,0 +1,75 @@
+{
+  "total_bytes_tools": 106570,
+  "tokens_aprox_4_chars_por_token": 26643,
+  "bytes_instrucoes": 1346,
+  "por_ferramenta": [
+    {
+      "name": "weather_forecast",
+      "bytes": 10403
+    },
+    {
+      "name": "ecmwf_forecast",
+      "bytes": 9401
+    },
+    {
+      "name": "meteofrance_forecast",
+      "bytes": 9113
+    },
+    {
+      "name": "gfs_forecast",
+      "bytes": 9001
+    },
+    {
+      "name": "gem_forecast",
+      "bytes": 8982
+    },
+    {
+      "name": "dwd_icon_forecast",
+      "bytes": 8921
+    },
+    {
+      "name": "metno_forecast",
+      "bytes": 8913
+    },
+    {
+      "name": "jma_forecast",
+      "bytes": 8858
+    },
+    {
+      "name": "seasonal_forecast",
+      "bytes": 7625
+    },
+    {
+      "name": "ensemble_forecast",
+      "bytes": 7399
+    },
+    {
+      "name": "weather_archive",
+      "bytes": 4506
+    },
+    {
+      "name": "marine_weather",
+      "bytes": 3822
+    },
+    {
+      "name": "climate_projection",
+      "bytes": 2811
+    },
+    {
+      "name": "air_quality",
+      "bytes": 2778
+    },
+    {
+      "name": "flood_forecast",
+      "bytes": 1936
+    },
+    {
+      "name": "geocoding",
+      "bytes": 1246
+    },
+    {
+      "name": "elevation",
+      "bytes": 837
+    }
+  ]
+}

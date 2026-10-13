@@ -1,0 +1,53 @@
+{
+  "aviso": "Upstream local simulado; NÃO são dados do Open-Meteo.",
+  "resultados": [
+    {
+      "cenario": "nulos",
+      "status_upstream": 200,
+      "isError": false,
+      "resposta": "{\"latitude\":-22.97,\"longitude\":-43.19,\"daily_units\":{\"precipitation_probability_max\":\"%\",\"uv_index_max\":\"\"},\"daily\":{\"time\":[\"2026-10-13\",\"2026-10-14\"],\"precipitation_probability_max\":[null,null],\"uv_index_max\":[11.2,null]}}"
+    },
+    {
+      "cenario": "vazio",
+      "status_upstream": 200,
+      "isError": false,
+      "resposta": "{\"latitude\":-22.97,\"longitude\":-43.19}"
+    },
+    {
+      "cenario": "e400",
+      "status_upstream": 400,
+      "isError": true,
+      "resposta": "Error: Invalid request parameters: Cannot initialize WeatherVariable from invalid String value foo_bar."
+    },
+    {
+      "cenario": "e401",
+      "status_upstream": 401,
+      "isError": true,
+      "resposta": "Error: Request failed with status code 401"
+    },
+    {
+      "cenario": "e404",
+      "status_upstream": 404,
+      "isError": true,
+      "resposta": "Error: Request failed with status code 404"
+    },
+    {
+      "cenario": "e429",
+      "status_upstream": 429,
+      "isError": true,
+      "resposta": "Error: Open-Meteo rate limit reached. Please retry later."
+    },
+    {
+      "cenario": "e500",
+      "status_upstream": 500,
+      "isError": true,
+      "resposta": "Error: Open-Meteo server error (500): Internal error"
+    },
+    {
+      "cenario": "e503",
+      "status_upstream": 503,
+      "isError": true,
+      "resposta": "Error: Open-Meteo server error (503): Request failed with status code 503"
+    }
+  ]
+}

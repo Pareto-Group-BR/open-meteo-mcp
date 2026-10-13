@@ -1,0 +1,2 @@
+previous-runs (diária): 0 "TypeError: fetch failed Request was cancelled."
+MCP past_days: Error: Failed to establish tunnel to api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden

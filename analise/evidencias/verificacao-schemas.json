@@ -1,0 +1,76 @@
+{
+  "weather_forecast_daily": {
+    "temperature_2m_max": true,
+    "apparent_temperature_max": true,
+    "uv_index_max": true,
+    "precipitation_sum": true,
+    "precipitation_probability_max": true,
+    "wind_gusts_10m_max": true,
+    "wind_speed_10m_max": true
+  },
+  "marine_weather_daily": {
+    "wave_height_max": true,
+    "wave_period_max": true,
+    "wave_direction_dominant": true,
+    "swell_wave_height_max": true,
+    "swell_wave_period_max": true,
+    "swell_wave_direction_dominant": true
+  },
+  "defaults_relevantes": {
+    "forecast_days_forecast": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 16,
+      "description": "Days to forecast, starting today."
+    },
+    "forecast_days_marine": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16,
+      "description": "Days to forecast, starting today."
+    },
+    "timezone_forecast": {
+      "type": "string",
+      "description": "IANA time zone (e.g. \"Europe/Paris\"), or \"auto\" for the location's own. Default GMT."
+    },
+    "cell_selection_marine": {
+      "type": "string",
+      "enum": [
+        "land",
+        "sea",
+        "nearest"
+      ],
+      "description": "Grid cell to use near a coastline: prefer \"land\", prefer \"sea\", or the \"nearest\" cell."
+    },
+    "models_marine": [
+      "best_match",
+      "meteofrance_wave",
+      "meteofrance_currents",
+      "dwd_ewam",
+      "dwd_gwam",
+      "ewam",
+      "gwam",
+      "ecmwf_wam",
+      "ecmwf_wam025",
+      "ecmwf_wam025_ensemble",
+      "ecmwf_wam025_ensemble_mean",
+      "ncep_gfswave025",
+      "ncep_gefswave025",
+      "ncep_gefswave025_ensemble_mean",
+      "era5_ocean"
+    ],
+    "wind_speed_unit": {
+      "default": "kmh",
+      "type": "string",
+      "enum": [
+        "kmh",
+        "ms",
+        "mph",
+        "kn"
+      ]
+    }
+  },
+  "hourly_aceita_previous_day": false,
+  "apikey_em_algum_schema": false,
+  "ferramentas_com_strict": 17
+}

@@ -1,0 +1,97 @@
+{
+  "gerado_em": "2026-10-13T15:36:44.679Z",
+  "hojeBR": "2026-10-13",
+  "amanhaBR": "2026-10-14",
+  "pontos": {
+    "Leme": {
+      "p": {
+        "nome": "Leme",
+        "latitude": -22.9627,
+        "longitude": -43.17
+      },
+      "atm": "Error: Failed to establish tunnel to api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden",
+      "mar": "Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden",
+      "marHora": "Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden",
+      "ms": {
+        "atm": 756,
+        "mar": 608
+      }
+    },
+    "Copacabana": {
+      "p": {
+        "nome": "Copacabana",
+        "latitude": -22.9711,
+        "longitude": -43.1863
+      },
+      "atm": "Error: Failed to establish tunnel to api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden",
+      "mar": "Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden",
+      "marHora": "MCP error -32000: Connection closed",
+      "ms": {
+        "atm": 363,
+        "mar": 312
+      }
+    },
+    "Ipanema": {
+      "p": {
+        "nome": "Ipanema",
+        "latitude": -22.9868,
+        "longitude": -43.2051
+      },
+      "atm": "Not connected",
+      "mar": "Not connected",
+      "marHora": "Not connected",
+      "ms": {
+        "atm": 0,
+        "mar": 1
+      }
+    },
+    "Barra da Tijuca": {
+      "p": {
+        "nome": "Barra da Tijuca",
+        "latitude": -23.0105,
+        "longitude": -43.365
+      },
+      "atm": "Not connected",
+      "mar": "Not connected",
+      "marHora": "Not connected",
+      "ms": {
+        "atm": 0,
+        "mar": 0
+      }
+    },
+    "Recreio": {
+      "p": {
+        "nome": "Recreio",
+        "latitude": -23.028,
+        "longitude": -43.46
+      },
+      "atm": "Not connected",
+      "mar": "Not connected",
+      "marHora": "Not connected",
+      "ms": {
+        "atm": 0,
+        "mar": 0
+      }
+    }
+  },
+  "modelos_atm": {
+    "best_match": "Not connected",
+    "ecmwf_ifs025": "Not connected",
+    "ncep_gfs_seamless": "Not connected",
+    "icon_seamless": "Not connected",
+    "gem_seamless": "Not connected",
+    "meteofrance_seamless": "Not connected"
+  },
+  "modelos_mar": {
+    "best_match": "Not connected",
+    "ecmwf_wam025": "Not connected",
+    "ncep_gfswave025": "Not connected",
+    "meteofrance_wave": "Not connected",
+    "dwd_gwam": "Not connected"
+  },
+  "cell_selection": {
+    "land": "Not connected",
+    "sea": "Not connected",
+    "nearest": "Not connected"
+  }
+}

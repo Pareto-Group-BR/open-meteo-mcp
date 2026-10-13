@@ -1,0 +1,114 @@
+[
+  {
+    "rotulo": "chamada válida (resultado depende da rede)",
+    "tool": "weather_forecast",
+    "args": {
+      "latitude": -22.9711,
+      "longitude": -43.1863,
+      "timezone": "America/Sao_Paulo",
+      "daily": [
+        "temperature_2m_max"
+      ],
+      "forecast_days": 2
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 406,
+    "resposta": "Error: Failed to establish tunnel to api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden"
+  },
+  {
+    "rotulo": "variável diária inexistente",
+    "tool": "weather_forecast",
+    "args": {
+      "latitude": -22.9711,
+      "longitude": -43.1863,
+      "timezone": "America/Sao_Paulo",
+      "daily": [
+        "wave_height_max"
+      ]
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 3,
+    "resposta": "MCP error -32602: Input validation error: Invalid arguments for tool weather_forecast: Invalid option: expected one of \"weather_code\"|\"temperature_2m_max\"|\"temperature_2m_min\"|\"apparent_temperature_max\"|\"apparent_temperature_min\"|\"sunrise\"|\"sunset\"|\"daylight_duration\"|\"sunshine_duration\"|\"uv_index_max\"|\"uv_index_clear_sky_max\"|\"rain_sum\"|\"showers_sum\"|\"snowfall_sum\"|\"precipitation_sum\"|\"precipitation_hours\"|\"precipitation_probability_max\"|\"wind_speed_10m_max\"|\"wind_gusts_10m_max\"|\"wind_direction_10m_dominant\"|\"shortwave_radiation_sum\"|\"et0_fao_evapotranspiration\"|\"temperature_2m_mean\"|\"apparent_temperature_mean\"|\"cape_mean\"|\"cape_max\"|\"cape_min\"|\"cloud_cover_mean\"|\"cloud_cover_max\"|\"cloud_co"
+  },
+  {
+    "rotulo": "parâmetro desconhecido: apikey (modo strict)",
+    "tool": "weather_forecast",
+    "args": {
+      "latitude": -22.9711,
+      "longitude": -43.1863,
+      "timezone": "America/Sao_Paulo",
+      "daily": [
+        "temperature_2m_max"
+      ],
+      "apikey": "x"
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 1,
+    "resposta": "MCP error -32602: Input validation error: Invalid arguments for tool weather_forecast: Unrecognized key: \"apikey\""
+  },
+  {
+    "rotulo": "previous_day1 em hourly",
+    "tool": "weather_forecast",
+    "args": {
+      "latitude": -22.9711,
+      "longitude": -43.1863,
+      "timezone": "America/Sao_Paulo",
+      "hourly": [
+        "temperature_2m_previous_day1"
+      ]
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 3,
+    "resposta": "MCP error -32602: Input validation error: Invalid arguments for tool weather_forecast: Unknown variable: use one of the listed surface variables, or a pressure-level variable named <variable>_<level>hPa (e.g. \"temperature_850hPa\"). at hourly[0]"
+  },
+  {
+    "rotulo": "forecast_days acima do máximo",
+    "tool": "weather_forecast",
+    "args": {
+      "latitude": -22.9711,
+      "longitude": -43.1863,
+      "timezone": "America/Sao_Paulo",
+      "daily": [
+        "temperature_2m_max"
+      ],
+      "forecast_days": 17
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 1,
+    "resposta": "MCP error -32602: Input validation error: Invalid arguments for tool weather_forecast: Too big: expected number to be <=16 at forecast_days"
+  },
+  {
+    "rotulo": "latitude fora do intervalo",
+    "tool": "marine_weather",
+    "args": {
+      "latitude": 95,
+      "longitude": 0
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 2,
+    "resposta": "MCP error -32602: Input validation error: Invalid arguments for tool marine_weather: Too big: expected number to be <=90 at latitude"
+  },
+  {
+    "rotulo": "marine: chamada válida (resultado depende da rede)",
+    "tool": "marine_weather",
+    "args": {
+      "latitude": -22.9711,
+      "longitude": -43.1863,
+      "daily": [
+        "wave_height_max"
+      ],
+      "timezone": "America/Sao_Paulo",
+      "forecast_days": 2
+    },
+    "isError": true,
+    "excecao": false,
+    "ms": 429,
+    "resposta": "Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden"
+  }
+]

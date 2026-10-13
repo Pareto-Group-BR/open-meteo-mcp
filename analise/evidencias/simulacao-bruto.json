@@ -1,0 +1,14 @@
+{
+  "periodo": [
+    "2025-12-01",
+    "2026-03-31"
+  ],
+  "totais": {},
+  "notas": [
+    "Leme: falha (atm status 0: TypeError: fetch failed Request was cancelled.; mar: Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden)",
+    "Copacabana: falha (atm status 0: TypeError: fetch failed Request was cancelled.; mar: Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden)",
+    "Ipanema: falha (atm status 0: TypeError: fetch failed Request was cancelled.; mar: Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden)",
+    "Barra da Tijuca: falha (atm status 0: TypeError: fetch failed Request was cancelled.; mar: Error: Failed to establish tunnel to marine-api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden)",
+    "Recreio: falha (atm status 0: TypeError: fetch failed Request was cancelled.; mar: Not connected)"
+  ]
+}

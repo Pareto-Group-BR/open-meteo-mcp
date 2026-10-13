@@ -1,0 +1,10 @@
+{
+  "previous_runs_diaria": {
+    "status": 0,
+    "ms": 493,
+    "json": null,
+    "texto": "TypeError: fetch failed Request was cancelled."
+  },
+  "previous_runs_horaria_status": 0,
+  "mcp_past_days": "Error: Failed to establish tunnel to api.open-meteo.com:443 via http://127.0.0.1:45183: HTTP/1.1 403 Forbidden"
+}
